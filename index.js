@@ -43,7 +43,7 @@ app.get('/api/:date',(req,res) => {
 
   if(!Date.parse(req.params.date) && !Number(req.params.date))
   {
-    return res.send({error: "Invalid Date"});
+    return res.send({error: "Invalid Date => the good format is yyyy-mm-dd"});
   }
 
 
